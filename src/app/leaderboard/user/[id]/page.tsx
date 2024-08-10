@@ -1,12 +1,16 @@
 "use client"; // para poder usar o useParams / elementos do client side
 
 import { useParams } from "next/navigation";
+import { getUser } from "../../../../../services/UserService";
 
-export default function User(){
+export default async function User(){
 
     const params = useParams();
-    const id = params.id;
+    const id = Number(params.id);
 
+    const user : User = await getUser(id);
+
+    //TODO
     //verificar se o usuário existe,
 
     //exibir nome de usuário
@@ -18,7 +22,7 @@ export default function User(){
 
         <main>
             <div>
-                <h1>User {id}</h1>
+                <h1>{user.username} {user.id}</h1>
                 
             </div>
         </main>
