@@ -8,31 +8,31 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Emulador de Jogos</h1>
-        <p className={styles.subtitle}>Entre no mundo dos clássicos!</p>
+        <h1 className={styles.title}>8-chip Game Emulator</h1>
+        <p className={styles.subtitle}>Enter the world of classics!</p>
       </header>
 
       <main className={styles.main}>
         <div className={styles.grid}>
           <Link href="/games" className={styles.card}>
-            <h2>Jogos &rarr;</h2>
-            <p>Escolha e jogue seus jogos favoritos.</p>
+            <h2>Games &rarr;</h2>
+            <p>Choose and play your favorite games.</p>
           </Link>
 
           <Link href="/leaderboard" className={styles.card}>
             <h2>Ranking &rarr;</h2>
-            <p>Veja as pontuações e competições.</p>
+            <p>View scores and competitions.</p>
           </Link>
 
           <Link href="/profile" className={styles.card}>
-            <h2>Perfil &rarr;</h2>
-            <p>Gerencie seu perfil e configurações.</p>
+            <h2>Profile &rarr;</h2>
+            <p>Manage your profile and settings.</p>
           </Link>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <p>© {currentYear} Emulador de Jogos 8-chip. Todos os direitos reservados.</p>
+        <p>© {currentYear} 8-chip Game Emulator. All rights reserved.</p>
       </footer>
     </div>
   );

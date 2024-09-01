@@ -7,10 +7,10 @@ const Footer = () => {
 
     return (
         <footer className={styles.footer}>
-            <p>Emulador de Jogos 8-chip. Todos os direitos reservados.</p>
+            <p>8-chip Game Emulator. All rights reserved.</p>
             <p>© {currentYear} Vitor Navarro</p>
             <a href="https://github.com/vitor-navarro" target="_blank" rel="noopener noreferrer" className={styles.githubLink}>
-                Meu GitHub
+                My GitHub
             </a>
         </footer>
     );

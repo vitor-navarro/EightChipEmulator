@@ -11,7 +11,7 @@ export default async function UserList() {
                 <thead>
                     <tr>
                         <th>Username</th>
-                        <th className={styles.scoreHeader}>Geral Score</th>
+                        <th className={styles.scoreHeader}>Total Score</th>
                     </tr>
                 </thead>
                 <tbody>
