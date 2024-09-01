@@ -2,6 +2,7 @@
 //junto a isso um link para o usuário.
 
 import UserList from "./usersList";
+import styles from "../../../styles/leaderboard.module.css"
 
 export default async function Users(){
 
@@ -9,7 +10,7 @@ export default async function Users(){
     return(
         <main>
             <div>
-                <h1>Leaderboard</h1>
+                <h1 className={styles.title}>Leaderboard</h1>
                 <UserList></UserList>
             </div>
         </main>

@@ -1,0 +1,26 @@
+/* components/Menu.module.css */
+.navbar {
+    background-color: #333; /* Cor de fundo do menu */
+    padding: 10px 20px; /* Espaçamento interno do menu */
+}
+
+.menu {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Alinha os itens do menu horizontalmente */
+    margin: 0;
+    padding: 0;
+}
+
+.menuItem {
+    margin-right: 20px; /* Espaço entre os itens do menu */
+}
+
+.menuItem a {
+    color: white; /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-size: 1rem; /* Tamanho da fonte dos links */
+}
+
+.menuItem a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

@@ -1,0 +1,7 @@
+.title {
+    font-size: 2rem; /* Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-align: center; /* Centraliza o título */
+    font-weight: bold; /* Deixa o texto em negrito */
+}

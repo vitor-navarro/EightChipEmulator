@@ -1,0 +1,40 @@
+/* leaderboard.module.css */
+.tableContainer {
+  margin: 20px;
+}
+
+.userTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.userTable th, .userTable td {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.userTable th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.userTable th.scoreHeader {
+  text-align: right; /* Alinha o título da coluna "Geral Score" à direita */
+}
+
+.userTable tr:hover {
+  background-color: #f9f9f9;
+}
+
+.userLink {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.userLink:hover {
+  text-decoration: underline;
+}
+
+.scoreField {
+  text-align: right; /* Alinha o conteúdo da coluna "Geral Score" à direita */
+}

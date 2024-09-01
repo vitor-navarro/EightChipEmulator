@@ -1,0 +1,17 @@
+.footer {
+    background-color: #333; /* Cor de fundo do footer */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 20px; /* Espaçamento interno do footer */
+    bottom: 0;
+    width: 100%;
+}
+
+.githubLink {
+    color: #0070f3; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.githubLink:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}

@@ -1,0 +1,103 @@
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 4rem;
+    color: #333;
+  }
+  
+  .subtitle {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid {
+    display: flex;
+    align-items: stretch; /* Alinha todos os cards com a mesma altura */
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 3rem;
+  }
+  
+  /* Estilo para os cards */
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease, transform 0.15s ease; /* Adiciona transição para cor, borda e posição */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Largura total para dispositivos móveis */
+    display: flex; /* Define flex para o card */
+    flex-direction: column; /* Direção das crianças flexíveis */
+    justify-content: space-between; /* Garante que o título esteja sempre visível */
+    flex-grow: 1; /* Faz com que todos os cards cresçam igualmente */
+  }
+  
+  .card:hover h2,
+  .card:focus h2,
+  .card:active h2 {
+    color: #0070f3; /* Azul no hover */
+    border-color: #0070f3;
+    transform: translateX(10px); /* Move o card 10px para a direita no hover */
+  }
+  
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+    flex-shrink: 0; /* Garante que o título nunca diminua de tamanho */
+    color: #333; /* Torna o título sempre visível */
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #666;
+    flex-grow: 1; /* Permite que o parágrafo cresça para preencher o espaço */
+  }
+  
+  .footer {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+    margin-top: 2rem;
+  }
+  
+  /* Media query para resoluções acima de 768px (tablets e desktops) */
+  @media (min-width: 768px) {
+    .grid {
+      flex-direction: row;
+    }
+  
+    .card {
+      flex-basis: calc(33.333% - 2rem); /* Divide a largura entre 3 cards */
+      max-width: 300px; /* Define um tamanho máximo para consistência */
+    }
+  }
+  
